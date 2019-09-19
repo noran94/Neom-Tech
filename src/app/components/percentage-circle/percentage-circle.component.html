@@ -1,0 +1,29 @@
+<div class="d-flex mb-3">
+  <span>{{type}}</span>
+  <span class="px-2 fa fa-pencil"></span>
+</div>
+<div class="content d-flex flex-wrap">
+  <div class="d-flex col-md-10 py-4 px-0">
+    <div class="mx-3 c100 p{{percentage}} small">
+      <span>{{percentage}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-self-center">
+      <div class="pb-2 d-flex justify-content-start">
+        <span class="px-1 fa fa-graduation-cap"></span>
+        <span>{{done}} {{' ' + doneMessage}} Done</span>
+      </div>
+      <div class=" d-flex justify-content-start">
+        <span class="px-1 fa fa-graduation-cap"></span>
+        <span>{{pending}} Pending</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 p-0">
+    <div class="d-flex justify-content-center mx-3 pt-2">{{total}} </div>
+    <div class="d-flex justify-content-center mx-3">Total</div>
+  </div>
+</div>

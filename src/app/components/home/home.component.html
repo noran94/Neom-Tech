@@ -1,0 +1,19 @@
+<div class="d-flex flex-wrap user-profile">
+  <div class="col-lg-3 col-12">
+   <app-profile></app-profile>
+  </div>
+  <div class="col-lg-9  col-12 mt-4 ">
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link class="p-0 d-flex justify-content-start" [routerLink]="link.link" *ngFor="let link of navLinks; let i = index"
+        (click)="onClick(i)" routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        <mat-icon class="icon-color px-2 d-flex fa {{link.icon}}"></mat-icon>
+        <span class="white-color"> {{' '+link.label}}</span>
+      </a>
+    </nav>
+    <div class="mat-tab-body-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<app-about></app-about>

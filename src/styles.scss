@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.user-profile .mat-tab-body-wrapper {
+    // height: 520px;
+    min-height: 520px;
+    position: absolute !important;
+    top: 66px;
+    width: 85%;
+    padding: 43px;
+    background-color: white;
+    -webkit-box-shadow: 0px 7px 11px 3px rgba(201,201,201,0.78);
+    -moz-box-shadow: 0px 7px 11px 3px rgba(201,201,201,0.78);
+    box-shadow: 0px 7px 11px 3px rgba(201,201,201,0.78);
+    @media only screen and (max-width: 991px) {
+      position: relative !important;
+      width: 100% !important;
+      top: 0px;
+      margin-bottom: 10px;
+    }
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #e8ebff;
+}
+
+.mat-tab-header, .mat-tab-nav-bar {
+  border-bottom: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.rtl {
+  // .mat-ink-bar {
+  //   left: auto !important;
+  //   right: 0;
+  // }
+}
